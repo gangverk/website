@@ -1,6 +1,6 @@
 /* 
 	Table of Contents
-	update on Thu Feb 18 2016 13:02:51 GMT+0200 (FLE Standard Time)
+	update on Fri Feb 19 2016 15:57:39 GMT+0200 (FLE Standard Time)
 
 	I.   Generic --------------------------------------
 	     01. Reset ------------------------------------
@@ -336,17 +336,16 @@ blockquote:last-child { margin-bottom: 0; }
 /* Small Desktop */
 
 @media (max-width: 1440px) {
-	.apps { width: 245px; height: 461px; left: 75%; bottom: 13%; padding: 56px 19px 88px 49px; margin-left: -149px; }
-	.apps-rotated { margin-left: -115px; }
+	.apps { width: 245px; height: 461px; padding: 56px 19px 88px 49px; margin-left: -139px; }
+	.apps-rotated { margin-left: -100px; }
 
 	.apps-inner { top: 57px; left: 49px; right: 19px; bottom: 88px; }
-	
 }
 
 /* Tablet Landscape */
 
 @media (max-width: 1200px) {
-	.apps { bottom: 18%; }
+	.apps { left: 75%; bottom: 18%; }
 }
 
 /* Tablet Portrait */
@@ -362,7 +361,7 @@ blockquote:last-child { margin-bottom: 0; }
 /* Mobile */
 
 @media (max-width: 767px) {
-	.apps { width: 180px; height: 339px; left: 50%; bottom: 3%; padding: 41px 13px 65px 36px; margin: 0 0 0 -100px; }
+	.apps { width: 180px; height: 339px; left: 50%; bottom: 0%; padding: 41px 13px 65px 36px; margin: 0 0 0 -100px; }
 	.apps-visible { -webkit-transform: translateY(0%) rotateZ(0deg); transform: translateY(0%) rotateZ(0deg); }
 	.apps-rotated { -webkit-transform: translateY(-33%) rotateZ(-90deg); transform: translateY(-33%) rotateZ(-90deg); margin-left: -76px; }
 
@@ -372,7 +371,7 @@ blockquote:last-child { margin-bottom: 0; }
 /* Small Mobile */
 
 @media (max-width: 376px) {
-	.apps { width: 150px; height: 283px; bottom: 5%; padding: 34px 11px 55px 30px; margin-left: -81px; }
+	.apps { width: 150px; height: 283px; bottom: 0%; padding: 34px 11px 55px 30px; margin-left: -81px; }
 	.apps-rotated { -webkit-transform: translateY(-34.5%) rotateZ(-90deg); transform: translateY(-34.5%) rotateZ(-90deg); margin-left: -65px; }
 
 	.apps-inner { top: 34px; left: 30px; right: 11px; bottom: 55px; }
@@ -553,8 +552,10 @@ input:-webkit-autofill { -webkit-text-fill-color: inherit !important; -webkit-bo
 
 @media (max-width: 767px) {
 	.section-scroll { display: none; }
-	.section-content { padding: 20px 60px 0 20px; }
 	.section-list { background-color: transparent; }
+
+	.section-content { padding: 20px 20px 0 20px; }
+	.section-content p { max-width: none; line-height: 1.25; }
 
 	.section-content-separator { position: relative; }
 	.section-content-separator:after { content: ''; height: 1px; display: block; position: absolute; bottom: 0; left: 20px; right: 20px; background-color: #a4a4a4; }
@@ -567,18 +568,18 @@ input:-webkit-autofill { -webkit-text-fill-color: inherit !important; -webkit-bo
 /* Smaller Mobile */
 
 @media (max-width: 360px) {
+	.section-content { padding: 10px 10px 0; }
+
 	.section-content h1,
 	.section-content h2,
 	.section-content p { line-height: 1.25; }
+
+	.section-cols-adjust .section-content p { font-size: 12px; margin-bottom: 5px; }
 }
 
 @media only screen and ( max-width: 320px ) and ( max-height: 400px ) {
 	.section .logo { padding: 0 0 10px; }
 	.section-content { padding: 10px 10px 0; }
-}
-
-@media only screen and ( max-width: 768px ) and ( orientation: landscape ) {
-	.section-content p { max-width: none; }
 }
 
 /* ------------------------------------------------------------ *\
