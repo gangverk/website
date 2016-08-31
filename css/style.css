@@ -323,7 +323,7 @@ blockquote:last-child { margin-bottom: 0; }
 	Apps
 \* ------------------------------------------------------------ */
 
-.apps { width: 309px; height: 582px; position: absolute; bottom: 13.85%; left: 50%; z-index: 4; padding: 71px 23px 111px 61px; margin-left: -183px; background: url(images/temp/app.png) no-repeat 0 0; background-size: 100%; -webkit-background-size: 100%; -webkit-transform: translateY(200%) rotateZ(0deg); transform: translateY(200%) rotateZ(0deg); transition: margin .7s ease-out, -webkit-transform .7s ease-out; transition: margin .7s ease-out, transform .7s ease-out; -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; pointer-events: none; }
+.apps { width: 309px; height: 582px; position: absolute; bottom: 20%; left: 50%; z-index: 4; padding: 71px 23px 111px 61px; margin-left: -183px; background: url(images/temp/app.png) no-repeat 0 0; background-size: 100%; -webkit-background-size: 100%; -webkit-transform: translateY(200%) rotateZ(0deg); transform: translateY(200%) rotateZ(0deg); transition: margin .7s ease-out, -webkit-transform .7s ease-out; transition: margin .7s ease-out, transform .7s ease-out; -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; pointer-events: none; }
 .apps-visible { -webkit-transform: translateY(0%) rotateZ(0deg); transform: translateY(0%) rotateZ(0deg); }
 .apps-rotated { margin-left: -142px; -webkit-transform: translateY(0%) rotateZ(-90deg); transform: translateY(0%) rotateZ(-90deg); }
 
